@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, section, aside, .box, footer{
+    border: 4px solid black;   
+    margin: 7px; 
+   
+}
+
+#container{
+    margin: auto;
+    width: 800px;
+    height: 1000px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas:
+    'head head head head head'
+    'main main main aside aside'
+    'section section section aside aside'
+    'section section section aside aside'
+    'section section section box box'
+    'footer footer footer footer footer'
+    ;
+}
+header{
+    grid-area: head;
+    background-color: turquoise;
+}
+main{
+    grid-area: main;
+    background-color: green;
+}
+section{
+    grid-area: section;
+    background-color:turquoise ;
+}
+aside{
+    grid-area: aside;
+    background-color: turquoise;
+}
+.box{
+    grid-area: box;
+    background-color: green; 
+}
+footer{
+    grid-area: footer;
+    background-color: green;
+}
+
+
+
+
+
